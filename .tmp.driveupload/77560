@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Download Videos - Instagram, Facebook, YouTube</title>
+    <!-- Add the Tailwind CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+    />
+    <!-- Add the Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+      /* Add a dark theme */
+      body {
+        background-color: #1a202c;
+        color: #fff;
+      }
+      .bg-gray-100 {
+        background-color: #2d3748;
+      }
+      .text-gray-700 {
+        color: #cbd5e0;
+      }
+      .hover\:text-gray-500:hover {
+        color: #cbd5e0;
+      }
+      .bg-white {
+        background-color: #fff;
+      }
+      .hover\:bg-gray-200:hover {
+        background-color: #4a5568;
+      }
+      .bg-gradient-to-r {
+        background-image: linear-gradient(to right, #667eea, #764ba2);
+      }
+      .from-blue-400 {
+        --bg-opacity: 1;
+        background-color: rgba(99, 179, 237, var(--bg-opacity));
+      }
+      .to-purple-400 {
+        --bg-opacity: 1;
+        background-color: rgba(139, 92, 246, var(--bg-opacity));
+      }
+      .from-pink-400 {
+        --bg-opacity: 1;
+        background-color: rgba(248, 113, 113, var(--bg-opacity));
+      }
+      .to-red-500 {
+        --bg-opacity: 1;
+        background-color: rgba(239, 68, 68, var(--bg-opacity));
+      }
+      .from-blue-400 {
+        --bg-opacity: 1;
+        background-color: rgba(99, 179, 237, var(--bg-opacity));
+      }
+      .to-purple-500 {
+        --bg-opacity: 1;
+        background-color: rgba(139, 92, 246, var(--bg-opacity));
+      }
+      .from-yellow-400 {
+        --bg-opacity: 1;
+        background-color: rgba(253, 230, 138, var(--bg-opacity));
+      }
+      .to-green-400 {
+        --bg-opacity: 1;
+        background-color: rgba(38, 194, 129, var(--bg-opacity));
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="bg-gradient-to-r from-blue-400 to-purple-400 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold animate__animated animate__heartBeat animate__infinite">Video Downloader</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-gray-500">Home</a></li>
+            <li><a href="#" class="hover:text-gray-500">About</a></li>
+            <li><

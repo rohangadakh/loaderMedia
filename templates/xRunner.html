@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- Load Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Load Popins font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        body {
+            background-color: #1f2937;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/random');
+            background-size: cover;
+            background-position: center;
+            animation: heroBlink 3s ease-in-out;
+        }
+
+        @keyframes heroBlink {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #d1d5db;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <!-- Head section -->
+    <header class="bg-gray-800">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="#" class="flex-shrink-0 text-white">
+                    <span class="ml-2 font-bold text-lg">loaderMedia</span>
+                </a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Icon when menu is closed. -->
+                    <!--
+                      Heroicon name: menu
+
+                      Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- Icon when menu is open. -->
+                    <!--
+                      Heroicon name: x
+
+                      Menu open: "block", Menu closed: "hidden"
+                    -->
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline">
+                    <a href="#" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Instagram</a>
+                    <a href="#" class="nav-link px-3 py-2 rounded-md text-sm font-medium">YouTube</a>
+                    <a href="#" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Instagram</a>
+                <a href="#" class="nav-link block px-3 py-2 rounded-md text-base font-medium">YouTube</a>
+                <a href="#" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Facebook</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!-- Hero section -->
+    <div class="hero h-screen flex items-center justify-center">
+        <h1 class="text-5xl font-bold text-white animate-pulse">Welcome to loaderMedia</h1>
+    </div>
+    <!-- Main section -->
+    <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <div class="px-4 py-6 sm:px-0">
+
+            <!-- About section -->
+            <section class="bg-gray-900">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                    <div class="md:flex md:items-center md:justify-between">
+                        <h2 class="text-2xl font-bold leading-7 text-white sm:text-3xl sm:truncate">
+                            About loaderMedia
+                        </h2>
+                        <a href="#" class="mt-5 md:mt-0 inline-flex items-center px-6 py-3 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest bg-blue-500 hover:bg-blue-600 active:bg-blue-900 focus:outline-none focus:border-blue-900 focus:shadow-outline-blue disabled:opacity-25 transition ease-in-out duration-150">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="mt-8 text-lg leading-7 text-gray-400">
+                        <p>
+                            loaderMedia is a video download website designed to make your life easier. With our user-friendly interface, finding and downloading your favorite videos has never been simpler. Our website supports a wide variety of video hosting websites, so you can always find the video you're looking for. Whether you're looking to download videos for personal or professional use, loaderMedia has got you covered.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
